@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:v="clr-namespace:System;assembly=mscorlib">
+
+    <v:String x:Key="unit_ABB_Save">Сохранить</v:String>
+    <v:String x:Key="unit_ABB_Load">Загрузить</v:String>
+    <v:String x:Key="unit_ABB_Message">Введите ниже данные для сохранения или загрузите сохраненный файл</v:String>
+    
+</ResourceDictionary>

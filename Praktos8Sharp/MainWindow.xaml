@@ -1,0 +1,29 @@
+﻿<Window x:Class="Praktos8Sharp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Praktos8Sharp" xmlns:Sys="clr-namespace:System;assembly=System.Runtime"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="103*"/>
+            <ColumnDefinition Width="97*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <ComboBox x:Name="LanguageComboBox" Grid.Column="1" SelectionChanged="ComboBox_SelectionChanged" Margin="140,0,0,111">
+            <Sys:String>Русский</Sys:String>
+            <Sys:String>English</Sys:String>
+        </ComboBox>
+        <Button Click="Serialize_click" Content="{DynamicResource unit_ABB_Save}" Grid.Row="1" Margin="402,144,0,0" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+        <Button Click="Deserialize_click" Content="{DynamicResource unit_ABB_Load}" Grid.Row="1" Margin="0,144,10,0" Grid.RowSpan="2"/>
+        <TextBox x:Name="TextTbx" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <TextBlock Text="{DynamicResource unit_ABB_Message}" Margin="0,0,0,144" Grid.RowSpan="2"/>
+    </Grid>
+</Window>
